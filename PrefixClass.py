@@ -34,7 +34,7 @@ class Prefix:
     
     def findASSet(self):
         """ Find AS Set information. Don't care about the AS's themselves.
-        So remove them as set hasAsSet"""
+        So remove them and set hasAsSet"""
         for i in range(len(self.aspath)):
             if "{" in self.aspath[i]:
                 self.aspath = self.aspath[:i]
